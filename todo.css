@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0eaff;
+  transition: 0.3s;
+}
+
+/* Dark mode */
+body.dark {
+  background: #121212;
+}
+
+.todo-container {
+  background: white;
+  padding: 20px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: 0.3s;
+}
+
+body.dark .todo-container {
+  background: #1f1f1f;
+  color: white;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #3c2c51;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.mode-btn {
+  background: #333;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+body.dark li {
+  background: #080429;
+}
+
+.task-text {
+  font-weight: bold;
+}
+
+.task-time {
+  font-size: 12px;
+  color: gray;
+}
+
+.actions button {
+  margin-left: 5px;
+  background: #2196f3;
+}
+
+.delete-btn {
+  background: rgb(114, 160, 238);
+}

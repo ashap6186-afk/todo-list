@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced To-Do List</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+<div class="todo-container">
+  <h2>📝 My To-Do List</h2>
+
+  <button class="mode-btn" onclick="toggleMode()">🌙 Dark / ☀ Light</button>
+
+  <div class="input-area">
+    <input type="text" id="taskInput" placeholder="Enter your task">
+    <input type="datetime-local" id="taskTime">
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <ul id="taskList"></ul>
+</div>
+
+<script src="todo.js"></script>
+</body>
+</html>
